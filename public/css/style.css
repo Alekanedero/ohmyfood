@@ -1,0 +1,18 @@
+.block {
+  background: #15DEA5;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 5rem 2rem 5rem;
+  font-size: 1rem;
+  color: #000;
+}
+.block__heading {
+  color: #9356DC;
+  cursor: pointer;
+}
+.block__heading:hover {
+  color: #FF79DA;
+}
+
+/*# sourceMappingURL=style.css.map */
