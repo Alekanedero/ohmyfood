@@ -1,3 +1,5 @@
+
+// test //
 .block {
     background: $color-test;
     margin: 0 auto;
@@ -13,4 +15,11 @@
             color: $color-secondary;
         }
     }
+}
+
+
+.container {
+    background-color: rgb(245, 245, 245);
+    margin-top: 70px;
+    padding: 0 20px 70px 20px;
 }
