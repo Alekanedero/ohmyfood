@@ -1,0 +1,30 @@
+.footer {
+    background-color: rgb(61, 61, 61);
+    padding-bottom: 20px;
+    &__logo {
+        width: 100px;
+        height: 100%;
+        padding: 20px 0 0 20px;
+        overflow: hidden;
+        & img {
+            width: 100%;
+            filter: invert(100%)
+        }
+    }
+    &__ul {
+        list-style-type: none;
+        padding: 10px 0 0 20px;
+        li {
+            padding: 5px 0;
+        }
+        i {
+            width: 10px;
+            height: 15px;
+            color: $white;
+            padding-right: 15px;
+        }
+        a {
+            color: $white;
+        }
+    }
+}

@@ -1,11 +1,4 @@
-.card {
-    border-radius: 15px 15px 0 0;
-    img {
-        width: 200px;
-        height: 150px;
-        object-fit: cover;
-    }
-}
+
 .position {
     font-weight: bold;
     background-color: rgb(227, 226, 226);
@@ -103,13 +96,10 @@
         @include btn-nouveau;
     }
     &__title {
-        padding-left: 15px;
-        padding-top: 20px;
+        padding: 20px 0 0 15px
     }
     &__position {
-        padding-bottom: 20px;
-        padding-left: 15px;
-        padding-top: 7px;
+        padding: 7px 0 20px 15px;
     }
     &__coeur {
         position: absolute;
@@ -119,32 +109,7 @@
             color: $color-primary;
         }
     }
-}
-.fa-heart {
-    font-size: 160%;
-}
-.footer {
-    background-color: rgb(61, 61, 61);
-    &__logo {
-        width: 120px;
-        height: 30px;
-        padding: 20px 0 0 20px;
-        overflow: hidden;
-        
-        & img {
-            width: 100%;
-            filter: invert(100%)
-        }
-    }
-    &__ul {
-        list-style-type: none;
-        color: #FFF;
-        padding: 10px;
-        // &__li {
-        // color: #FFF;
-        // }
-        // &__a {
-        //     color: #FFF;
-        // }
+    .fa-heart {
+        font-size: 160%;
     }
 }
