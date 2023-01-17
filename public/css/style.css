@@ -223,6 +223,7 @@ body {
 }
 .footer__logo img {
   width: 100%;
+  filter: invert(100%);
 }
 .footer__ul {
   list-style-type: none;
