@@ -162,11 +162,12 @@ body {
   color: #9356DC;
 }
 .fonctionnement .numero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   font-size: 12px;
-  text-align: center;
   background-color: #9356DC;
-  border: 1px solid #9356DC;
   border-radius: 50%;
   width: 20px;
   height: 20px;

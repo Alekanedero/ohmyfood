@@ -19,3 +19,8 @@
     top:15px;
     right: 15px;
 }
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

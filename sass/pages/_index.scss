@@ -60,11 +60,10 @@
         }
     }
     .numero {
+        @include flex-center;
         color: $white;
         font-size: 12px;
-        text-align: center;
         background-color: $color-primary;
-        border: 1px solid $color-primary;
         border-radius: 50%;
         width: 20px;
         height: 20px;
