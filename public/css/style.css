@@ -158,6 +158,9 @@ body {
 .fonctionnement .btn:hover {
   background-color: #eae4f8;
 }
+.fonctionnement .btn:hover .fa-solid {
+  color: #9356DC;
+}
 .fonctionnement .numero {
   color: #fff;
   font-size: 12px;
