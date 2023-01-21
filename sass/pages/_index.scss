@@ -23,14 +23,7 @@
         padding: 7px 10px;
     }
     .btn-violet {
-        background-image: linear-gradient(to top, #805cd2 0%, #ff52ce 100%);
-        color: #FFF;
-        font-size: 18px;
-        padding: 20px 20px;
-        border: 1px solid rgb(255, 255, 255);
-        border-radius: 40px;
-        width: 50%;
-        margin: auto;
+        @include btn-purple;
     }
 }
 .fonctionnement {

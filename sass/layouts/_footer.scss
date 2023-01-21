@@ -8,7 +8,8 @@
         overflow: hidden;
         & img {
             width: 100%;
-            filter: invert(100%)
+            filter: invert(100%);
+            object-fit: cover;
         }
     }
     &__ul {

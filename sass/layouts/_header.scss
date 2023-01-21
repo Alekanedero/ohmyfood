@@ -1,5 +1,8 @@
-.logo_ohmyfood {
+header {
+    position: relative;
     margin-top: 20px;
+}
+.logo_ohmyfood {
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
@@ -8,6 +11,12 @@
         object-fit: cover;
         }
 }
-.fleche {
-    
+.fa-arrow-left {
+    position: absolute;
+    left: 20px;
+    top: 5px;
+    color: black;
+    &--no-display {
+        display: none;
+    }
 }
