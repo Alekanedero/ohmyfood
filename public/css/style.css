@@ -264,7 +264,12 @@ header {
 }
 @media (min-width: 600px) {
   .carte_restaurants__image {
-    height: 100px;
+    height: 150px;
+  }
+}
+@media (min-width: 991px) {
+  .carte_restaurants__image {
+    height: 250px;
   }
 }
 .carte_restaurants__nouveau {

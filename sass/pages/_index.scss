@@ -108,7 +108,10 @@
         margin: 0;
         @include img-ratio;
         @media (min-width: 600px){
-            height: 100px;
+            height: 150px;
+        }
+        @media (min-width: 991px){
+            height: 250px;
         }
     }
     &__nouveau {
