@@ -9,15 +9,17 @@
         object-fit: cover;
         }
 }
-@mixin btn-purple {
+@mixin btn-violet {
     background-image: linear-gradient(to top, #805cd2 0%, #ff52ce 100%);
     color: #FFF;
-    font-size: 18px;
-    padding: 20px 20px;
-    border-radius: 40px;
-    width: 50%;
-    margin: auto;
+    font-size: 15px;
+    padding: 15px 3px;
+    border-radius: 30px;
     text-align: center;
+    margin: 20px 40px 30px 40px;
+    & hover {
+        opacity: 0.8;
+    }
 }
 @mixin btn-nouveau {
     position: absolute;
@@ -37,4 +39,8 @@
 @mixin border-green {
     border-bottom: 3px solid $color-tertiary;
     width: 50px;
+}
+@mixin mobile-only {
+    @media screen and (max-width: 599px){
+    }
 }
