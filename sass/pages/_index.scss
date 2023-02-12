@@ -1,33 +1,36 @@
 
 
-// header
+// header //
 
 .position {
+    @include flex-center;
     font-weight: bold;
-    background-color: rgb(227, 226, 226);
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    // border-top: 1px solid rgba(0,0,0,0.2);
-    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.3);
+    background-color: $color-light-gray2;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px inset;
+    height: 50px;
     }
 
-    .fa-location-dot {
-        width: 110%;
-        padding-right: 10px;
-    }
+.fa-location-dot {
+    width: 110%;
+    padding-right: 10px;
+}
+
+// Réserver le menu qui vous convient //
 
 .reserver {
     background-color: rgb(244, 244, 244);
     padding: 20px 20px;
     text-align: center;
     h1, p {
-        padding: 7px 10px;
+        padding: 7px 0;
     }
     .btn-violet {
         @include btn-violet;
     }
 }
+
+// Fonctionnement //
+
 .fonctionnement {
     padding: 20px;
     h1 {
@@ -74,11 +77,11 @@
     }
     .fa-solid {
         color: gray ;
-        &:hover {
-            color: $color-primary;
-        }
     }
 }
+
+// Bloc des cartes restaurants //
+
 .bloc_restaurants {
     display: flex;
     flex-direction: column;
@@ -86,7 +89,7 @@
     & h1 {
         padding-top: 50px;
         padding-bottom: 20px;
-    }
+    }    
     &__cartes {
         display: flex;
         flex-direction: column;
@@ -102,7 +105,11 @@
             flex: 1 0 40%;
             }
         }
-}
+    }
+
+
+//  Carte restaurant //
+
 .carte_restaurants {
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -128,36 +135,26 @@
     }
     &__position {
         padding: 7px 0 20px 15px;
-    }
-    &__coeur {
-        position: absolute;
-        bottom: 40px;
-        right: 40px;
-        z-index: 1;
-        &:hover {
-            border-radius: 25px;
-            &::after {
-              border-radius: 25px;
-              opacity: 1;
-            }
-          }
-          &::after {
-            border-radius: 25px;
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background: linear-gradient(#9356DC 0%, #FF79DA 100%);
-            opacity: 0;
-            z-index: -1;
-            transition: opacity 250ms;
-          }
-           
-    }
-    .fa-heart {
-        font-size: 160%;
+    }    
+}
+.fa-heart {
+    font-size: 150%;
+}
+
+.unliked, .liked {
+    position: absolute;
+    right: 40px;
+    bottom: 35px;
+}
+
+.liked {
+    background: -webkit-gradient(linear, right top, left bottom, from($color-primary), to($color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+    opacity: 0;
+    &:hover {
+        opacity: 1;
+        transition: 0.3s;
     }
 }
 
@@ -166,3 +163,68 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+// au cas ou 
+
+// .carte_restaurants {
+//     border-radius: 20px;
+//     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+//     position: relative;
+//     &__image {
+//         margin: 0;
+//         @include img-ratio;
+//         @media (min-width: 600px){
+//             height: 150px;
+//         }
+//         @media (min-width: 991px){
+//             height: 250px;
+//         }
+//     }
+//     &__nouveau {
+//         @include btn-nouveau;
+//         &--invisible {
+//             display: none;
+//         }
+//     }
+//     &__title {
+//         padding: 20px 0 0 15px
+//     }
+//     &__position {
+//         padding: 7px 0 20px 15px;
+//     }
+//     &__coeur {
+//         position: absolute;
+//         bottom: 40px;
+//         right: 40px;
+//         z-index: 1;
+//         &:hover {
+//             border-radius: 25px;
+//             &::after {
+//               border-radius: 25px;
+//               opacity: 1;
+//             }
+//         }
+//         &::after {
+//         border-radius: 25px;
+//         content: "";
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         bottom: 0;
+//         left: 0;
+//         background: linear-gradient(#9356DC 0%, #FF79DA 100%);
+//         opacity: 0;
+//         z-index: -1;
+//         transition: opacity 250ms;
+//         }        
+//     }

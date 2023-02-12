@@ -6,13 +6,12 @@
     width: 100%;
     height: 100%;
     @include flex-center;
-    animation: loaderDisable 2.2s forwards;
+    animation: loaderDisable 1.2s forwards;
 
     &__bars {
         width: 50px;
         height: 50px;
-        display: inline-block;
-        vertical-align: middle;
+        @include flex-center;
         position: relative;
 
         &:before, &:after, span{
@@ -30,6 +29,7 @@
             left: 15px;
             animation-delay:-.66s;
         }
+
         & span{
             left: 30px;
             animation-delay: -.33s;

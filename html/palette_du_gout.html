@@ -1,171 +1,198 @@
 <!DOCTYPE html>
 
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8"/>
-        <Title>La palette du goût</Title>
-        <script src="https://kit.fontawesome.com/50e989ed29.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="Stylesheet" href="../public/css/style.css"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    </head>
+<head>
+    <meta charset="UTF-8"/>
+    <Title>alex</Title>
+    <script src="https://kit.fontawesome.com/50e989ed29.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="Stylesheet" href="../public/css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
 
-    <body>
+<body>
 
 
-            <!-- HEADER -->
+        <!-- HEADER -->
 
-        <header>
-            <a href="../index.html">
-                <i class=" fa-solid fa-arrow-left"></i>
-            </a>
-            <div class="logo_ohmyfood">
-                <img src="../public\img\logo\ohmyfood.png" alt="logo ohmyfood">
+    <header>
+        <a href="../index.html">
+            <i class=" fa-solid fa-arrow-left"></i>
+        </a>
+        <div class="logo_ohmyfood">
+            <img src="../public\img\logo\ohmyfood.png" alt="logo ohmyfood">
+        </div>
+        <div class="image_restaurant">
+            <img src="../public/img/restaurants/la_palette_du_gout.jpg" alt="La palette du goût">
+        </div>
+    </header>
+
+            <!-- <button class="button-orange">Cliquez ici</button> -->
+
+    <!-- MAIN -->
+
+    <main class="main">
+        <div class="main__title">
+            <h1>La palette du goût</h1>
+            <div class="main__coeur">
+                <i class="fa-regular fa-heart unliked"></i>
+                <i class="fa-solid fa-heart liked"></i>
             </div>
-            <div class="image_restaurant">
-                <img src="../public/img/restaurants/la_palette_du_gout.jpg" alt="La palette du goût">
-            </div>
-        </header>
+        </div>
 
-        <!-- MAIN -->
 
-        <main class="main">
-                <div class="main__title">
-                    <h1>La palette du goût</h1>
-                    <i class="fa-regular fa-heart"></i>
+        <section class="container_bloc_cartes">
+            <!-- animation -->
+            <div class="bloc_carte">
+
+                <h2>ENTREÉS</h2>
+                <div class="bloc_carte__bloc_btn">
+
+
+                    <a href="#">
+                        <article class="case">
+                            <div class="case__description">
+                                <h3 class="case__nom">Fricassée d'escargots</h3>
+                                <h4 class="case__info">Au piment d'Espelette</h4>
+                            </div> 
+                            <div class="case__price">25€</div>
+                            <div class="case__check">
+                                <i class="fas fa-check-circle icon"></i>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="case">
+                            <div class="case__description">
+                                <h3 class="case__nom">Foie gras de canard mi-cuit</h3>
+                                <h4 class="case__info">Et ses copeaux de truffe noire</h4>
+                            </div> 
+                            <div class="case__price">35€</div>
+                            <div class="case__check">
+                                <i class="fas fa-check-circle icon"></i>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="case">
+                            <div class="case__description">
+                                <h3 class="case__nom">OEuf au plat</h3>
+                                <h4 class="case__info">Assaisonné à la truffe sur le lit de caviar</h4>
+                            </div> 
+                            <div class="case__price">20€</div>
+                            <div class="case__check">
+                                <i class="fas fa-check-circle icon"></i>
+                            </div>
+                        </article>
+                    </a>
                 </div>
-
-
-                <button class="button-orange">Cliquez ici</button>
-
-
-                <section class="container_bloc_cartes">
-                    <div class="bloc_carte">
-                        <h2>ENTREÉS</h2>
-                        <div class="bloc_carte__bloc_btn">
-
-
-
-                            <a href="#" class="anim">
-                                <article class="bloc_carte__btn anim">
-                                    <h3>Fricassée d'escargots</h3>
-                                    <div class="bloc_carte__price">
-                                        <h4>Au piment d'Espelette</h4>
-                                        <p>25€</p>
-                                    </div>
-                                </article>
-                                <!-- <div class="icon"></div> -->
-                            </a>
-
-
-
-                            <a href="#">
-                                <article class="bloc_carte__btn">
-                                    <h3>Foie gras de canard mi-cuit</h3>
-                                    <div class="bloc_carte__price">
-                                        <h4>Et ses copeaux de truffe noire</h4>
-                                        <p>35€</p>
-                                    </div>
-                                </article>
-                            </a>
-                            <a href="#">
-                                <article class="bloc_carte__btn">
-                                    <h3>OEuf au plat</h3>
-                                    <div class="bloc_carte__price">
-                                        <h4>Assaisonné à la truffe sur le lit de caviar</h4>
-                                        <p>20€</p>
-                                    </div>
-                                </article>
-                            </a>
-                        </div>
-                    <div/>
-                    <div class="bloc_carte">
-                        <h2>PLATS</h2>
-                        <div class="bloc_carte__bloc_btn">
-                            <a href="#">
-                                <article class="bloc_carte__btn">
-                                    <h3>Filet de boeuf aux herbes</h3>
-                                    <div class="bloc_carte__price">
-                                        <h4>Accompagné de sa ribambelle de légumes</h4>
-                                        <p>40€</p>
-                                    </div>
-                                </article>
-                            </a>
-                            <a href="#">
-                                <article class="bloc_carte__btn">
-                                    <h3>Parmentier de queue de boeuf</h3>
-                                    <div class="bloc_carte__price">
-                                        <h4>À la truffe noire sur sa purée de panais</h4>
-                                        <p>35€</p>
-                                    </div>
-                                </article>
-                            </a>
-                            <a href="#">
-                                <article class="bloc_carte__btn">
-                                    <h3>Filet de turbot</h3>
-                                    <div class="bloc_carte__price">
-                                        <h4>Aux agrumes</h4>
-                                        <p>44€</p>
-                                    </div>
-                                </article>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="bloc_carte">
-                        <h2>DESSERTS</h2>
-                        <div class="bloc_carte__bloc_btn">
-                            <a href="#">
-                                <article class="bloc_carte__btn">
-                                    <h3>Paris-Brest</h3>
-                                    <div class="bloc_carte__price">
-                                        <h4>Revisité</h4>
-                                        <p>18€</p>
-                                    </div>
-                                </article>
-                            </a>
-                            <a href="#">
-                                <article class="bloc_carte__btn">
-                                    <h3>Macaron au chocolat d'exception</h3>
-                                    <div class="bloc_carte__price">
-                                        <h4>Et glace à la vanille de Madagascar</h4>
-                                        <p>22€</p>
-                                    </div>
-                                </article>
-                            </a>
-                            <a href="#">
-                                <article class="bloc_carte__btn">
-                                    <h3>Mousse au chocolat </h3>
-                                    <div class="bloc_carte__price">
-                                        <h4>Au piment d'Espelette et à la truffe noire</h4>
-                                        <p>23€</p>
-                                    </div>
-                                </article>
-                            </a>
-                        </div>
-                    <div/>
-                </section>
-
-
-            <!-- BOUTON COMMANDER  -->
-
-            <a href="#">
-                <div class="btn_violet">Commander</div>
-            </a>
-        </main>
-
-        <!-- Footer -->
-
-        <footer class="footer">
-            <div class="footer__logo">
-                <img src="../public\img\logo\ohmyfood.png">
+            <div/>
+            <div class="bloc_carte">
+                <h2>PLATS</h2>
+                <div class="bloc_carte__bloc_btn">
+                    <a href="#">
+                        <article class="case">
+                            <div class="case__description">
+                                <h3 class="case__nom">Filet de boeuf aux herbes</h3>
+                                <h4 class="case__info">Accompagné de sa ribambelle de légumes</h4>
+                            </div> 
+                            <div class="case__price">40€</div>
+                            <div class="case__check">
+                                <i class="fas fa-check-circle icon"></i>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="case">
+                            <div class="case__description">
+                                <h3 class="case__nom">Parmentier de queue de boeuf</h3>
+                                <h4 class="case__info">À la truffe noire sur sa purée de panais</h4>
+                            </div> 
+                            <div class="case__price">35€</div>
+                            <div class="case__check">
+                                <i class="fas fa-check-circle icon"></i>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="case">
+                            <div class="case__description">
+                                <h3 class="case__nom">Filet de turbot</h3>
+                                <h4 class="case__info">Aux agrumes</h4>
+                            </div> 
+                            <div class="case__price">44€</div>
+                            <div class="case__check">
+                                <i class="fas fa-check-circle icon"></i>
+                            </div>
+                        </article>
+                    </a>             
+                </div>
             </div>
-            <ul class="footer__ul">
-                <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
-                <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
-                <li><a href ="#">Mentions légales</a></li>
-                <li><a href ="mailto: ">Contact</a></li>
-            </ul>
-        </footer>
-    </body>
+            <div class="bloc_carte">
+                <h2>DESSERTS</h2>
+                <div class="bloc_carte__bloc_btn">
+
+                    <a href="#">
+                        <article class="case">
+                            <div class="case__description">
+                                <h3 class="case__nom">Paris-Brest</h3>
+                                <h4 class="case__info">Revisité</h4>
+                            </div> 
+                            <div class="case__price">18€</div>
+                            <div class="case__check">
+                                <i class="fas fa-check-circle icon"></i>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="case">
+                            <div class="case__description">
+                                <h3 class="case__nom">Macaron au chocolat d'exception</h3>
+                                <h4 class="case__info">Et glace à la vanille de Madagascar</h4>
+                            </div> 
+                            <div class="case__price">22€</div>
+                            <div class="case__check">
+                                <i class="fas fa-check-circle icon"></i>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="case">
+                            <div class="case__description">
+                                <h3 class="case__nom">Mousse au chocolat</h3>
+                                <h4 class="case__info">Au piment d'Espelette et à la truffe noire</h4>
+                            </div> 
+                            <div class="case__price">23€</div>
+                            <div class="case__check">
+                                <i class="fas fa-check-circle icon"></i>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            <div/>
+        </section>
+
+
+        <!-- BOUTON COMMANDER  -->
+
+        <a href="#">
+            <div class="btn_violet">Commander</div>
+        </a>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="footer__logo">
+            <img src="../public\img\logo\ohmyfood.png">
+        </div>
+        <ul class="footer__ul">
+            <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+            <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+            <li><a href ="#">Mentions légales</a></li>
+            <li><a href ="mailto: ">Contact</a></li>
+        </ul>
+    </footer>
+</body>
 </html>
