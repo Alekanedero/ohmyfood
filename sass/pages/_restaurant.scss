@@ -42,7 +42,7 @@
   flex-direction: column;
 }
 .bloc_carte {
-  // background-color: #e68e09;
+  background-color: #e68e09;
   display: flex;
   flex-direction: column;
   & h2 {
@@ -73,7 +73,7 @@
     animation-fill-mode: both;
   }
   &__description {
-    // background-color: red;
+    background-color: red;
     width: 85%;
     display: flex;
     flex-direction: column;
@@ -95,7 +95,7 @@
     @include no-wrap;
   }
   &__price {
-    // background-color: blue;
+    background-color: blue;
     width: 15%;
     display: flex;
     justify-content: center;
@@ -123,10 +123,16 @@
     transform: translatex(-100%);
   }
   &:hover &__prix {
-    transform: translatex(-100%);
+    transform: translatex(-10px);
   }
   &:hover .icon {
     animation: spin 360ms forwards 100ms;
+  }
+}
+.fa-check-circle {
+  font-size: 80%;
+  @include media-desktop {
+    font-size: 150%
   }
 }
 .icon {

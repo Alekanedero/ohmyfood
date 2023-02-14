@@ -1,3 +1,30 @@
+
+$breakpoints: (
+    mobile: 599px,
+    tab-min: 600px,
+    tab-max: 990px,
+    desktop: 991px,
+);
+
+@mixin mobile-only{
+	@media screen and (max-width: map-get($breakpoints, mobile)){
+		@content;
+	}
+}
+@mixin media-tablette{
+	@media screen and (min-width: map-get($breakpoints, tab-min))
+    and (max-width: map-get($breakpoints, tab-max)){
+		@content;
+	}
+}
+@mixin media-desktop{
+	@media screen and (min-width: map-get($breakpoints, desktop)){
+		@content;
+	}
+}
+
+
+
 @mixin img-ratio {
     width: 100%;
     height: 200px;
