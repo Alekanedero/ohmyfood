@@ -7,8 +7,11 @@ header {
     justify-content: center;
     padding-bottom: 20px;
     img {
-        width: 160px;
+        width: 200px;
         object-fit: cover;
+        @include media-desktop {
+            width: 300px;
+        }
         }
 }
 .fa-arrow-left {
@@ -16,7 +19,8 @@ header {
     left: 20px;
     top: 5px;
     color: black;
-    &--no-display {
-        display: none;
+    font-size: 1.6em;
+    @include media-desktop {
+        font-size: 2.2em;
     }
 }
