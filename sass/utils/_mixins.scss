@@ -23,8 +23,6 @@ $breakpoints: (
 	}
 }
 
-
-
 @mixin img-ratio {
     width: 100%;
     height: 200px;
@@ -33,8 +31,7 @@ $breakpoints: (
     border-radius: 15px 15px 0 0;
     & img {
         width: 100%;
-        height: 100%;
-        
+        height: 100%;   
         object-fit: cover;
         }
 }

@@ -33,25 +33,25 @@
         & span{
             left: 30px;
             animation-delay: -.33s;
-        }  
+        }
     }
     & p {
-        font-size: 40px;
+        font-size: 30px;
         color: rgb(0, 0, 0);
         margin-left: 30px;
+        @include media-desktop {
+            font-size: 40px;
+        }
     }
 }
-
 
 @keyframes grow {
     0% {
       transform: scaleY(0);
       opacity: 0; }
-  
     50% {
       transform: scaleY(1);
       opacity: 1; }
-  
     100% {
       transform: scaleY(0);
       opacity: 0; } }
@@ -62,12 +62,10 @@
         visibility: visible;
         opacity: 1;
     }
-
     80% {
         visibility: visible;
         opacity: 1;
     }
-
     100% {
         visibility: hidden;
         opacity: 0;

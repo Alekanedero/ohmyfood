@@ -4,11 +4,13 @@
 }
 
 html, body {
-  margin: auto;
   max-width: 1400px;
-  min-width: 320px;
   margin: 0;
   padding: 0;
+}
+
+html {
+  margin: auto;
 }
 
 h1 {
@@ -90,9 +92,14 @@ body {
   animation-delay: -0.33s;
 }
 .loader p {
-  font-size: 40px;
+  font-size: 30px;
   color: rgb(0, 0, 0);
   margin-left: 30px;
+}
+@media screen and (min-width: 991px) {
+  .loader p {
+    font-size: 40px;
+  }
 }
 
 @keyframes grow {
@@ -368,8 +375,14 @@ header {
   padding: 7px 0 20px 15px;
 }
 
+/* --- animation coeur ---*/
 .fa-heart {
   font-size: 150%;
+}
+@media screen and (min-width: 991px) {
+  .fa-heart {
+    font-size: 200%;
+  }
 }
 
 .unliked, .liked {
@@ -377,9 +390,15 @@ header {
   right: 40px;
   bottom: 35px;
 }
+@media screen and (min-width: 600px) and (max-width: 990px) {
+  .unliked, .liked {
+    right: 20px;
+  }
+}
 
 .liked {
   background: -webkit-gradient(linear, right top, left bottom, from(#9356DC), to(#FF79DA));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
@@ -427,7 +446,6 @@ header {
 }
 
 .bloc_carte {
-  background-color: #e68e09;
   display: flex;
   flex-direction: column;
 }
@@ -455,13 +473,7 @@ header {
   position: relative;
   overflow: hidden;
 }
-.case:hover .case__price {
-  width: 100%;
-  transition: 300ms ease-in-out;
-  animation-fill-mode: both;
-}
 .case__description {
-  background-color: red;
   width: 85%;
   display: flex;
   flex-direction: column;
@@ -489,7 +501,6 @@ header {
   text-overflow: ellipsis;
 }
 .case__price {
-  background-color: blue;
   width: 15%;
   display: flex;
   justify-content: center;
@@ -516,15 +527,29 @@ header {
 .case:hover .case__check {
   transform: translatex(-100%);
 }
-.case:hover .case__prix {
-  transform: translatex(-10px);
+.case:hover .case__price {
+  width: 40%;
+  transition: 300ms ease-in-out;
+  animation-fill-mode: both;
+  justify-content: left;
+  padding-left: 4%;
+}
+@media screen and (min-width: 600px) and (max-width: 990px) {
+  .case:hover .case__price {
+    width: 33%;
+  }
+}
+@media screen and (min-width: 991px) {
+  .case:hover .case__price {
+    width: 28%;
+  }
 }
 .case:hover .icon {
-  animation: spin 360ms forwards 100ms;
+  animation: spin 500ms forwards 130ms;
 }
 
 .fa-check-circle {
-  font-size: 80%;
+  font-size: 100%;
 }
 @media screen and (min-width: 991px) {
   .fa-check-circle {
@@ -543,21 +568,13 @@ header {
 @keyframes spin {
   0% {
     transform: rotate(0deg);
-    opacity: 1;
-  }
-  10% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  55% {
-    transform: rotate(180deg);
-    opacity: 1;
   }
   100% {
     transform: rotate(360deg);
-    opacity: 1;
   }
 }
+/* --- animation déroulante ---*/
+/* --- Boutton violet commander ---*/
 .btn_violet {
   background: linear-gradient(#9356DC 0%, #FF79DA 100%);
   color: #FFF;
@@ -569,47 +586,6 @@ header {
 }
 .btn_violet hover {
   opacity: 0.8;
-}
-
-button {
-  border-radius: 4px;
-  background-color: #5ca1e1;
-  border: none;
-  color: #fff;
-  text-align: center;
-  font-size: 32px;
-  padding: 16px;
-  width: 220px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 36px;
-  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-}
-
-button {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-button:after {
-  content: "»";
-  position: absolute;
-  opacity: 0;
-  top: 14px;
-  right: -20px;
-  transition: 0.5s;
-}
-
-button:hover {
-  padding-right: 24px;
-  padding-left: 8px;
-}
-
-button:hover:after {
-  opacity: 1;
-  right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

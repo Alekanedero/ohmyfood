@@ -85,7 +85,6 @@
 .bloc_restaurants {
     display: flex;
     flex-direction: column;
- 
     & h1 {
         padding-top: 50px;
         padding-bottom: 20px;
@@ -137,19 +136,27 @@
         padding: 7px 0 20px 15px;
     }    
 }
+
+/* --- animation coeur ---*/
+
 .fa-heart {
     font-size: 150%;
+    @include media-desktop {
+        font-size: 200%;
+    }
 }
-
 .unliked, .liked {
     position: absolute;
     right: 40px;
     bottom: 35px;
+    @include media-tablette {
+        right: 20px;
+    }
 }
-
 .liked {
     background: -webkit-gradient(linear, right top, left bottom, from($color-primary), to($color-secondary));
-    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;    
     -webkit-text-fill-color: transparent;   
     opacity: 0;
     &:hover {
