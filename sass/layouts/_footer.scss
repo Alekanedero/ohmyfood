@@ -1,10 +1,11 @@
 .footer {
     background-color: rgb(61, 61, 61);
     padding-bottom: 20px;
+
     &__logo {
-        width: 100px;
+        width: 150px;
         height: 100%;
-        padding: 20px 0 0 20px;
+        padding: 30px 10px 20px 20px;
         overflow: hidden;
         & img {
             width: 100%;
@@ -12,9 +13,11 @@
             object-fit: cover;
         }
     }
-    &__ul {
+
+    &__liens {
         list-style-type: none;
         padding: 10px 0 0 20px;
+        font-size: 14px;
         li {
             padding: 5px 0;
         }
@@ -22,7 +25,7 @@
             width: 10px;
             height: 15px;
             color: $white;
-            padding-right: 15px;
+            padding-right: 25px;
         }
         a {
             color: $white;

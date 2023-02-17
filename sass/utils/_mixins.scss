@@ -37,15 +37,31 @@ $breakpoints: (
 }
 
 @mixin btn-violet {
-    background: linear-gradient(#9356DC 0%, #FF79DA 100%);
+    background: $gradient-pink;
     color: #FFF;
-    font-size: 15px;
+    font-size: 16px;
     padding: 15px 3px;
     border-radius: 30px;
     text-align: center;
-    margin: 20px 40px 30px 40px;
-    & hover {
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 20px;
+    width: 60%;
+    cursor: pointer;
+
+    &:hover {
         opacity: 0.8;
+        box-shadow: 10px 0px 15px 0px rgba(0,0,0,0.5);
+        transition: 300ms ease-in-out ;
+    }
+    @include media-desktop {
+        width: 35%;
+        font-size: 22px;
+    }
+
+    @include media-tablette {
+        width: 50%;
+        font-size: 18px;
     }
 }
 @mixin btn-nouveau {
@@ -66,10 +82,6 @@ $breakpoints: (
 @mixin border-green {
     border-bottom: 3px solid $color-tertiary;
     width: 50px;
-}
-@mixin mobile-only {
-    @media screen and (max-width: 599px){
-    }
 }
 @mixin no-wrap {
     white-space: nowrap;
