@@ -6,7 +6,7 @@ $breakpoints: (
     desktop: 991px,
 );
 
-@mixin mobile-only{
+@mixin media-mobile{
 	@media screen and (max-width: map-get($breakpoints, mobile)){
 		@content;
 	}
@@ -36,44 +36,7 @@ $breakpoints: (
         }
 }
 
-@mixin btn-violet {
-    background: $gradient-pink;
-    color: #FFF;
-    font-size: 16px;
-    padding: 15px 3px;
-    border-radius: 30px;
-    text-align: center;
-    margin: auto;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin-top: 20px;
-    width: 60%;
-    cursor: pointer;
 
-    &:hover {
-        opacity: 0.8;
-        box-shadow: 10px 0px 15px 0px rgba(0,0,0,0.5);
-        transition: 300ms ease-in-out ;
-    }
-    @include media-desktop {
-        width: 35%;
-        font-size: 22px;
-    }
-
-    @include media-tablette {
-        width: 50%;
-        font-size: 18px;
-    }
-}
-@mixin btn-nouveau {
-    position: absolute;
-    background-color: $color-tertiary;
-    color: darken($color-tertiary, 45);
-    font-weight: 800;
-    border-radius: 5px;
-    padding: 10px;
-    top:15px;
-    right: 15px;
-}
 @mixin flex-center {
     display: flex;
     justify-content: center;

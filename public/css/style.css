@@ -92,7 +92,7 @@ body {
   animation-delay: -0.33s;
 }
 .loader p {
-  font-size: 30px;
+  font-size: 26px;
   color: rgb(0, 0, 0);
   margin-left: 30px;
 }
@@ -168,29 +168,6 @@ header {
   transition: 300ms ease-in-out;
 }
 
-.block {
-  background: #15DEA5;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  padding: 1rem 5rem 2rem 5rem;
-  font-size: 1rem;
-  color: #000;
-}
-.block__heading {
-  color: #9356DC;
-  cursor: pointer;
-}
-.block__heading:hover {
-  color: #FF79DA;
-}
-
-.container {
-  background-color: rgb(245, 245, 245);
-  margin-top: 70px;
-  padding: 0 20px 70px 20px;
-}
-
 .footer {
   background-color: rgb(61, 61, 61);
   padding-bottom: 20px;
@@ -240,8 +217,8 @@ header {
 }
 
 .reserver {
-  background-color: rgb(244, 244, 244);
-  padding: 20px 20px;
+  background-color: #f4f4f4;
+  padding: 25px 20px;
   text-align: center;
 }
 .reserver h1, .reserver p {
@@ -257,14 +234,14 @@ header {
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-top: 20px;
-  width: 60%;
-  cursor: pointer;
   width: 80%;
+  cursor: pointer;
+  margin-top: 25px;
 }
 .reserver .btn-violet:hover {
   opacity: 0.8;
   box-shadow: 10px 0px 15px 0px rgba(0, 0, 0, 0.5);
-  transition: 300ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
 @media screen and (min-width: 991px) {
   .reserver .btn-violet {
@@ -290,30 +267,53 @@ header {
   flex-direction: column;
   gap: 20px;
 }
-@media (min-width: 900px) {
+@media screen and (min-width: 991px) {
   .fonctionnement .bloc {
     flex-direction: row;
     gap: 25px;
     flex: 1;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 990px) {
+  .fonctionnement .bloc {
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+  }
+}
 .fonctionnement .btn {
   padding: 20px 0;
   display: flex;
-  align-items: center;
   gap: 20px;
-  background-color: rgb(255, 255, 255);
-  border: 1 solid #FFF;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-@media (min-width: 900px) {
+.fonctionnement .btn__title {
+  font-weight: bold;
+  font-size: 14px;
+}
+@media screen and (min-width: 991px) {
+  .fonctionnement .btn__title {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 990px) {
+  .fonctionnement .btn__title {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 991px) {
   .fonctionnement .btn {
     flex: 1 0 25%;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 990px) {
+  .fonctionnement .btn {
+    width: 70%;
+  }
+}
 .fonctionnement .btn:hover {
-  background-color: #eae4f8;
+  background-color: #f2eafb;
 }
 .fonctionnement .btn:hover .fa-solid {
   color: #9356DC;
@@ -330,8 +330,38 @@ header {
   height: 20px;
   margin-left: -10px;
 }
+@media screen and (min-width: 991px) {
+  .fonctionnement .numero {
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 990px) {
+  .fonctionnement .numero {
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+  }
+}
 .fonctionnement .fa-solid {
   color: gray;
+}
+
+.container {
+  background-color: rgb(245, 245, 245);
+  margin-top: 50px;
+  padding: 0 20px 70px 20px;
+}
+@media screen and (min-width: 991px) {
+  .container {
+    padding: 0 40px 70px 40px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 990px) {
+  .container {
+    padding: 0 30px 70px 30px;
+  }
 }
 
 .bloc_restaurants {
@@ -348,21 +378,34 @@ header {
   flex: 1;
   gap: 20px;
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 991px) {
   .bloc_restaurants__cartes {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 40px;
   }
 }
-@media (min-width: 600px) {
-  .bloc_restaurants a {
+@media screen and (min-width: 600px) and (max-width: 990px) {
+  .bloc_restaurants__cartes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .bloc_restaurants__cartes a {
+    flex: 1 0 40%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 990px) {
+  .bloc_restaurants__cartes a {
     flex: 1 0 40%;
   }
 }
 
 .carte_restaurants {
   border-radius: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
   position: relative;
 }
 .carte_restaurants__image {
@@ -378,14 +421,14 @@ header {
   height: 100%;
   object-fit: cover;
 }
-@media (min-width: 600px) {
+@media screen and (min-width: 991px) {
   .carte_restaurants__image {
-    height: 150px;
+    height: 300px;
   }
 }
-@media (min-width: 991px) {
+@media screen and (min-width: 600px) and (max-width: 990px) {
   .carte_restaurants__image {
-    height: 250px;
+    height: 150px;
   }
 }
 .carte_restaurants__nouveau {
@@ -397,9 +440,6 @@ header {
   padding: 10px;
   top: 15px;
   right: 15px;
-}
-.carte_restaurants__nouveau--invisible {
-  display: none;
 }
 .carte_restaurants__title {
   padding: 20px 0 0 15px;
@@ -431,7 +471,6 @@ header {
 
 .liked {
   background: -webkit-gradient(linear, right top, left bottom, from(#9356DC), to(#FF79DA));
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
@@ -439,6 +478,7 @@ header {
 .liked:hover {
   opacity: 1;
   transition: 0.3s;
+  animation: animcoeur 1s;
 }
 
 /* --- Image plat du restaurant --- */
@@ -683,13 +723,13 @@ header {
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-top: 20px;
-  width: 60%;
+  width: 80%;
   cursor: pointer;
 }
 .btn_violet:hover {
   opacity: 0.8;
   box-shadow: 10px 0px 15px 0px rgba(0, 0, 0, 0.5);
-  transition: 300ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
 @media screen and (min-width: 991px) {
   .btn_violet {
