@@ -459,6 +459,7 @@ header {
 }
 
 .unliked, .liked {
+  display: block;
   position: absolute;
   right: 40px;
   bottom: 35px;
@@ -470,14 +471,13 @@ header {
 }
 
 .liked {
-  background: -webkit-gradient(linear, right top, left bottom, from(#9356DC), to(#FF79DA));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   opacity: 0;
+  background-clip: text transparent;
+  background-color: linear-gradient(#9356DC 0%, #FF79DA 100%);
 }
 .liked:hover {
   opacity: 1;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
   animation: animcoeur 1s;
 }
 
@@ -701,6 +701,10 @@ header {
 
 .delay3 {
   animation-delay: 400ms;
+}
+
+.delay4 {
+  animation-delay: 600ms;
 }
 
 /* --- Animation Check --- */

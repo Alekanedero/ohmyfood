@@ -202,6 +202,7 @@
     }
 }
 .unliked, .liked {
+    display: block;
     position: absolute;
     right: 40px;
     bottom: 35px;
@@ -210,16 +211,24 @@
     }
 }
 .liked {
-    background: -webkit-gradient(linear, right top, left bottom, from($color-primary), to($color-secondary));
+    // background: -webkit-gradient(linear, right top, left bottom, from($color-primary), to($color-secondary));
     // background-clip: text;
-    -webkit-background-clip: text;    
-    -webkit-text-fill-color: transparent;   
+    // -webkit-background-clip: text; 
+    // -webkit-text-fill-color: transparent;   
     opacity: 0;
+
+    background-clip: text transparent;
+    background-color: $gradient-pink;
+    
+    // text-fill-color: transparent;
+
+
     &:hover {
         opacity: 1;
-        transition: 0.3s;
+        transition: 0.3s ease-in-out;
         animation: animcoeur 1s;
     }
+    
 }
 
 // @keyframes animcoeur{
