@@ -41,9 +41,9 @@
   }
 
   &__coeur {
-    position: relative;
+    position: absolute;
     top: 30px;
-    right: -30px;
+    right: 30px;
     @include media-desktop{
       margin-right: 30px;
     }
